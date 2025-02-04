@@ -16,7 +16,15 @@
     <form>
       <div>
         <label>Name:</label>
-        <input type="text" placeholder="Add your name" />
+        <input
+          type="text"
+          required
+          value="Mammad"
+          placeholder="Add your name"
+        />
+        // required - vacibdir; readonly - oxuna bilir, deyisdirile bilmez;
+        disabled - deyisdirile bilmez; maxlength="10" - max uzunluq;
+        miblength="5" - min uzunluq; autofocus - sehifeni acanda focus olur;
       </div>
       <div>
         <label>Eamil:</label>
@@ -24,15 +32,15 @@
       </div>
       <div>
         <label>Password:</label>
-        <input type="password" placeholder="Add your password" />
+        <input type="password" autofocus placeholder="Add your password" />
       </div>
       <div>
         <label>Number:</label>
-        <input type="number" />
+        <input type="number" max="100" min="10" step="10" />
       </div>
       <div>
         <label>Birthyear:</label>
-        <input type="date" />
+        <input type="date" min="2023-04-16" max="2023-04-26" />
         <!-- type="month" type="week" type="time" type="datetime-local" -->
       </div>
       <div>
@@ -41,11 +49,11 @@
       </div>
       <div>
         <label>Accept our offer:</label>
-        <input type="checkbox" />
+        <input type="checkbox" checked />
       </div>
       <div>
         <label>Male:</label>
-        <input type="radio" name="gender" />
+        <input type="radio" name="gender" checked />
         <label>Female:</label>
         <input type="radio" name="gender" />
       </div>
@@ -59,7 +67,7 @@
       </div>
       <div>
         <label>File:</label>
-        <input type="file" />
+        <input type="file" multiple accept="video/*,image/jpeg" />
       </div>
       <div>
         <label>File:</label>
@@ -67,7 +75,7 @@
       </div>
       <div>
         <label>Qiymet araligi sec:</label>
-        <input type="range" />
+        <input type="range" max="500" min="100" />
       </div>
       <div>
         <label>Etrafli:</label>
